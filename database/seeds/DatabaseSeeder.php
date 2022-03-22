@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
         // $this->call(UsersTableSeeder::class);
         $this->call(FornecedorSeeder::class);
         $this->call(SiteContatoSeeder::class);
+        $this->call(MotivoContatoSeeder::class);
         //para processar uma única seed - (php artisan db:seed --class 'nome da classe seeder') - 
     }
 }
