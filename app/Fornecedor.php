@@ -12,4 +12,9 @@ class Fornecedor extends Model
     protected $table = 'fornecedores';
     //para utilizar o metodo do tinker create, precisa adicionar os campos no array abaixo
     protected $fillable = ['nome', 'site', 'uf', 'email'];
+
+    public function produtos(){
+        return $this->hasMany('App\Item', 'fornecedor_id', 'id');
+        //return $this->hasMany('App\Item');
+    }
 }
